@@ -16,7 +16,7 @@ steps:
     image: node:latest
     environment:
       CONVENTIONAL_GITHUB_RELEASER_TOKEN:
-        from_secret: key
+        from_secret: CONVENTIONAL_GITHUB_RELEASER_TOKEN
     commands:
       - npm run generate-releaselog
     when:
